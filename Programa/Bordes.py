@@ -1,14 +1,5 @@
 import cv2
-<<<<<<< HEAD
-import numpy as np
-import argparse
-import random as rng
-=======
 from ConvexHull import GrahamScan
-
->>>>>>> 868af5bbc3102ebe9c794ef51f6081c10de80cad
-#Importar un video
-#cap = cv2.VideoCapture('video3.mp4')
 
 #Usar camara principal
 cap = cv2.VideoCapture(0)
