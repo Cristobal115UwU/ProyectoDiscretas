@@ -1,7 +1,12 @@
 import cv2
+<<<<<<< HEAD
 import numpy as np
 import argparse
 import random as rng
+=======
+from ConvexHull import GrahamScan
+
+>>>>>>> 868af5bbc3102ebe9c794ef51f6081c10de80cad
 #Importar un video
 #cap = cv2.VideoCapture('video3.mp4')
 
@@ -28,11 +33,6 @@ leftLim = x_roi + 2
 upLim = y_roi + 2
 downLim = hight_roi - 2
 
-#Colisiones
-rightCol = None
-leftCol = None
-upCol = None
-downCol = None
 
 def countourMaxMin(array):
     ls = array.tolist()
@@ -97,13 +97,14 @@ while True:
 			if yMax[1] + y_roi >= downLim:
 				cv2.putText(frame,"Colision", (300,440), 1, 1.3, (0,0,255), thickness=2)
 
-			#cv2.putText(frame,str(area), (x,y), 2, 1.5, (0,255,0))
 			#Dibujamos el contorno si el area es mayor al area minima
 			#cv2.drawContours(ROI, c,-1,color_contours,3)
 			#"""
 			#Aplicamos convexHull a cada contorno.
 			##Cada contorno es una matriz de puntos de [n][1][3]
-			hull1 = cv2.convexHull(c)
+			#hull1 = cv2.convexHull(c)
+			hull1 = GrahamScan(c)
+			#print(hull1)
 			cv2.drawContours(ROI,[hull1],0,color_hull,3)
 			#"""
 	
