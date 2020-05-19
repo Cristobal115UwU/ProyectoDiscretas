@@ -1,5 +1,7 @@
 import cv2
-
+import numpy as np
+import argparse
+import random as rng
 #Importar un video
 #cap = cv2.VideoCapture('video3.mp4')
 
