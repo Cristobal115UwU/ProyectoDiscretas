@@ -55,7 +55,7 @@ while True:
 	th = cv2.medianBlur(th,9)
 
 	#Se muestra la imagen umbralizada
-	#cv2.imshow('Vision Umbral',th)
+	cv2.imshow('Vision Umbral',th)
 	
 	#Detectamos los bordes
 	imgCanny = cv2.Canny(th,100,100)

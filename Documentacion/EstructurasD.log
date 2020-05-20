@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 02:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 12:40
 entering extended mode
 **./EstructurasD.tex
 (EstructurasD.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
-File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -135,22 +135,22 @@ LaTeX Font Info:    ... okay on input line 11.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=483.69687pt
-* \textheight=731.23584pt
+* \textheight=745.46222pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -221,54 +221,53 @@ G,.JBIG2,.JB2,.eps]
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <14.4> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <7> on input line 12.
 <../../../Downloads/Convex.png, id=1, 349.305pt x 121.45375pt>
 File: ../../../Downloads/Convex.png Graphic file (type png)
 <use ../../../Downloads/Convex.png>
-Package pdftex.def Info: ../../../Downloads/Convex.png  used on input line 23.
+Package pdftex.def Info: ../../../Downloads/Convex.png  used on input line 22.
 (pdftex.def)             Requested size: 199.16988pt x 71.13075pt.
  [1
 
 {C:/Users/1ZW05LA_RS3/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../..
 /../Downloads/Convex.png>]
+<../../../Downloads/Recon1.jpg, id=10, 82.6287pt x 47.09595pt>
+File: ../../../Downloads/Recon1.jpg Graphic file (type jpg)
+<use ../../../Downloads/Recon1.jpg>
+Package pdftex.def Info: ../../../Downloads/Recon1.jpg  used on input line 43.
+(pdftex.def)             Requested size: 426.79134pt x 243.2683pt.
 <../../../Downloads/DiagramaFlujoD.png, id=11, 572.28806pt x 597.58257pt>
 File: ../../../Downloads/DiagramaFlujoD.png Graphic file (type png)
 <use ../../../Downloads/DiagramaFlujoD.png>
 Package pdftex.def Info: ../../../Downloads/DiagramaFlujoD.png  used on input l
-ine 40.
-(pdftex.def)             Requested size: 540.63168pt x 625.97568pt.
-
-Overfull \hbox (56.93481pt too wide) in paragraph at lines 40--41
- [][] 
- []
+ine 50.
+(pdftex.def)             Requested size: 483.69643pt x 625.97568pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 <../../../Downloads/DiagramaFlujoD.png>] (EstructurasD.aux
+[2 <../../../Downloads/Recon1.jpg>] [3 <../../../Downloads/DiagramaFlujoD.png>]
+(EstructurasD.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2901 strings out of 492895
- 41318 string characters out of 3133461
- 123753 words of memory out of 3000000
- 6790 multiletter control sequences out of 15000+200000
- 7926 words of font info for 28 fonts, out of 3000000 for 9000
+ 2895 strings out of 492895
+ 41355 string characters out of 3133461
+ 123758 words of memory out of 3000000
+ 6788 multiletter control sequences out of 15000+200000
+ 6103 words of font info for 22 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,31p,720b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,31p,664b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on EstructurasD.pdf (3 pages, 135319 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on EstructurasD.pdf (3 pages, 189688 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
