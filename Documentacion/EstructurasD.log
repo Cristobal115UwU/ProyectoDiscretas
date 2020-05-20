@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 16:34
 entering extended mode
 **./EstructurasD.tex
 (EstructurasD.tex
@@ -289,12 +289,12 @@ File: ../../../Pictures/Prueba2.png Graphic file (type png)
 <use ../../../Pictures/Prueba2.png>
 Package pdftex.def Info: ../../../Pictures/Prueba2.png  used on input line 50.
 (pdftex.def)             Requested size: 227.62204pt x 146.32654pt.
-<../../../Downloads/DiagramaFlujoD.png, id=13, 572.28806pt x 597.58257pt>
+<../../../Downloads/DiagramaFlujoD.png, id=13, 596.2275pt x 604.35788pt>
 File: ../../../Downloads/DiagramaFlujoD.png Graphic file (type png)
 <use ../../../Downloads/DiagramaFlujoD.png>
 Package pdftex.def Info: ../../../Downloads/DiagramaFlujoD.png  used on input l
 ine 56.
-(pdftex.def)             Requested size: 483.69643pt x 625.97568pt.
+(pdftex.def)             Requested size: 483.69675pt x 625.99983pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--58
 
@@ -331,7 +331,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb>
-Output written on EstructurasD.pdf (3 pages, 698038 bytes).
+Output written on EstructurasD.pdf (3 pages, 698595 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
