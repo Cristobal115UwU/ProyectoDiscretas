@@ -20,7 +20,7 @@ Un problema clásico de la geometría computacional es el llamado \textit{envolv
 Graficamente se representa así el problema:\\
 \begin{figure}
 \centering
-\includegraphics[width=7 cm, height= 2.5 cm]{../../../Downloads/Convex.png}
+%\includegraphics[width=7 cm, height= 2.5 cm]{../../../Downloads/Convex.png}
 \caption{Representación grafica de convex hull}
 \end{figure}
 
@@ -29,14 +29,20 @@ Graficamente se representa así el problema:\\
 \section{¿Qué hicimos?}
 La propuesta del proyecto fue realizar una aplicación usando la metodología de Convex Hull. La aplicación seleccionada fue un sistema que evita que algún objeto colisione con otro. El programa se realizó en Python, debido a que en dicho lenguaje de programación se cuentan con las bibliotecas necesarias para manejar el hardware necesario en este proyecto.
 
-Para el correcto funcionamiento del programa necesitaremos tener una cámara web, estar en un cuarto oscuro y contar con una lampara de escritorio. El funcionamiento del programa se basa en 2 ventanas; una mostrara la imagen pero en modo umbral y la otra mostrara la imagen en vivo de lo que capte la cámara web. Cuando la cámara detecte un objeto en la ventana que tiene la visión umbral se tornara negra, esto debido al contraste con la luz que detecta la cámara web. Con el area negra de la ventana con visión umbral, podremos conseguir las coordenadas de los puntos que estan al borde de dicho objeto y guardarlos en una lista.
+Para el correcto funcionamiento del programa necesitaremos tener una cámara web, los objetos para hacer las pruebas y un fondo de color. También funciona con cuarto oscuro y una lampara de escritorio, en caso de no tener el fondo uniforme. El programa mostrara una ventana con la imagen en vivo de lo que capte la cámara web. Antes de encontrar los puntos del objeto, procesamos la imagen de entrada.
+
+Primero se convierte en formato de blanco y negro. Después, se le aplica una umbralización para eliminar el posible ruido y aislar el objeto a detectar. Luego, aplicamos una función que detecta los bordes que encuentre en la imagen. Finalmente, aumentamos el tamaño de estos bordes para corregir posibles rupturas de contornos.
+
+Ahora se aplica a la imagen una función de detección de contornos, que nos devuelve un arreglo de todos los puntos que conforman dicho contorno del objeto. El arreglo se transforma a una lista para que sea más sencillo de iterar y trabajar.
 
 Con dicha lista de puntos podemos aplicar el algoritmo para construir el convex hull, dicho algoritmo se trata de Graham Scan debido a su facilidad de aplicar. Con el convex hull hecho guardamos los puntos que formen parte de las aristas de nuestro convex hull. Para saber si el objeto va a entrar en colisión uno de los puntos que estén contenidos en las aristas del convex hull tienen que ser mayores o iguales a los puntos que están contenidas en las aristas de un rectángulo, este rectángulo y la construcción del convex hull se pueden apreciar en la ventana que muestra lo que esta capturando la cámara web (vista normal).
 
-La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto. Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sofisticado para la detección de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
+La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto.
+
+Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sofisticado para la detección de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
 \begin{figure}[h!]
 \section{Diagrama de Flujo}
 \centering
-\includegraphics[width=19 cm, height=22 cm]{../../../Downloads/DiagramaFlujoD.png}
+%\includegraphics[width=19 cm, height=22 cm]{../../../Downloads/DiagramaFlujoD.png}
 \end{figure}
 \end{document}
