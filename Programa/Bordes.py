@@ -69,7 +69,6 @@ while True:
 
 	#Encontramos los contornos en la imagen
 	contornos,_ = cv2.findContours(imgDil, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-	print(type(contornos))
 	for c in contornos:
 		area = cv2.contourArea(c)
 		if area > areaMin:

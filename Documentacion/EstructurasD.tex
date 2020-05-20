@@ -1,7 +1,7 @@
 \documentclass[]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
-\geometry{top= 1cm, bottom=2cm, left=1.5cm, right=1.5cm}
+\geometry{top= 0.5cm, bottom=2cm, left=1.5cm, right=1.5cm}
 \usepackage{graphicx}
 \title{Proyecto Estructuras Discretas}
 \author{Bruno Solis Diego Roman\\García Gutiérrez Edgar Cristóbal\\López Gonzalez Kevin\\Moreno Peralta Angel Eduardo }
@@ -10,17 +10,29 @@
 \begin{document}
 \maketitle
 \section{Resumen}
-\large
-La geometría computacional es una rama de la ciencias de la computación dedicada al estudio de los algoritmos que pueden ser expresados en términos de la geometría. Gracias a esta rama de la computación han surgido muchas optimizaciones en diversas áreas de la vida cotidiana, tales como los mapas interactivos (como Google Maps), el poder visualizar el tráfico en vivo de alguna parte de nuestra localidad (como Waze), automóviles autónomos (Tesla), etcétera.\\
-Debido al gran potencial que tiene esta rama de la ciencia se decidió buscar una optimización que nos ayude a solucionar un problema de la vida real usando conceptos de matemáticas discretas, y geometría euclidiana.\\
 
-Un problema clásico de esta rama científica es el envolvente convexo (en inglés convex hull), este problema plantea que dado un conjunto realizar un polígono (por lo general irregular) cuyas aristas envuelven a todo un conjunto de puntos,
-El conjunto de aristas forman un grafo cuyos vértices que se conectan entre sí representan la creación de un polígono convexo con la propiedad de que en el interior de dicho polígono se encuentren los demás puntos del conjunto.
-Este es un problema clásico de la geometría computacional y existen diversos algoritmos que resuelven este problema. 
+La geometría computacional es una rama de la ciencias de la computación dedicada al estudio de los algoritmos que pueden ser expresados en términos de la geometría.
+
+Gracias a esta rama de la computación han surgido muchas optimizaciones en diversas áreas de la vida cotidiana, tales como los mapas interactivos (como Google Maps), el poder visualizar el tráfico en vivo de alguna parte de nuestra localidad (como Waze), automóviles autónomos (Tesla), etcétera.\\
+Debido al gran potencial que tiene esta rama de la ciencia se decidió buscar una optimización que nos ayude a solucionar un problema de la vida real usando conceptos de matemáticas discretas, y geometría euclidiana.
+
+Un problema clásico de la geometría computacional es el llamado \textit{envolvente convexo} (en inglés \textit{convex hull}), este problema plantea que dado un conjunto de puntos, se crea un polígono (por lo general irregular) el cual en su interior tendra almacenados a los puntos de dicho conjunto. Este es un problema clásico de la geometría computacional y existen diversos algoritmos que resuelven este problema tales como: Graham Scan, QuickHull, Fuerza Bruta etc.\\
+Graficamente se representa así el problema:\\\begin{figure}[hbtp]
+\caption{•}
+\centering
+\includegraphics[width=7 cm, height= 2.5 cm]{../../Downloads/Convex.png}
+\end{figure}
+
+
 
 \section{¿Qué hicimos?}
-La propuesta del proyecto fue realizar una aplicación de la vida real usando Convex Hull. La aplicación seleccionada fue recrear un sistema que evita que algún objeto colisione con otro. El programa se realizó en Python, debido a que en dicho lenguaje de programación se cuentan con las bibliotecas necesarias para manejar el hardware necesario en este proyecto. Para el correcto funcionamiento del programa necesitaremos tener una cámara web, estar en un cuarto oscuro y contar con una lampara de escritorio. El programa al iniciarse, abrirá 2 ventanas, una mostrara la imagen pero en modo de iluminación, de esta manera si la cámara detecta una fuente de luz, entonces se tornara negra la imagen, si no detecta una fuente de iluminación entonces la ventana se tornara blanca. Cuando la cámara detecte un objeto, entonces con ayuda de la parte negra de la ventana de iluminación, sacaremos los puntos que nos ayudaran a realizar el convex hull.\\ 
-Para realizar el convex hull, se opto por usar el algoritmo Graham Scan.Una vez obtenido el convex hull de la parte sombreada de nuestro programa, este se reflejara en la ventana que tendrá la vista normal de nuestra cámara, si dicho convex hull se sale fuera del contorno que se definió desde un principio, esto implicaría que el objeto tiene probabilidad de colisionar con lo que pongamos en la cámara.
+La propuesta del proyecto fue realizar una aplicación usando la metodología de Convex Hull. La aplicación seleccionada fue un sistema que evita que algún objeto colisione con otro. El programa se realizó en Python, debido a que en dicho lenguaje de programación se cuentan con las bibliotecas necesarias para manejar el hardware necesario en este proyecto.
+
+Para el correcto funcionamiento del programa necesitaremos tener una cámara web, estar en un cuarto oscuro y contar con una lampara de escritorio. El funcionamiento del programa se basa en 2 ventanas; una mostrara la imagen pero en modo umbral y la otra mostrara la imagen en vivo de lo que capte la cámara web. Cuando la cámara detecte un objeto en la ventana que tiene la visión umbral se tornara negra, esto debido al contraste con la luz que detecta la cámara web. Con el area negra de la ventana con visión umbral, podremos conseguir las coordenadas de los puntos que estan al borde de dicho objeto y guardarlos en una lista.
+
+Con dicha lista de puntos podemos aplicar el algoritmo para construir el convex hull, dicho algoritmo se trata de Graham Scan debido a su facilidad de aplicar. Con el convex hull hecho guardamos los puntos que formen parte de las aristas de nuestro convex hull. Para saber si el objeto va a entrar en colisión uno de los puntos que estén contenidos en las aristas del convex hull tienen que ser mayores o iguales a los puntos que están contenidas en las aristas de un rectángulo, este rectángulo y la construcción del convex hull se pueden apreciar en la ventana que muestra lo que esta capturando la cámara web (vista normal).
+
+La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto. Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sotifiscado para la deteccion de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
 
 \section{Diagrama de Flujo}
 \includegraphics[width=19 cm, height=22 cm]{../../Downloads/DiagramaFlujoD.png}
