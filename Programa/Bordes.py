@@ -14,6 +14,9 @@ window.quit()
 #Usar camara principal
 cap = cv2.VideoCapture(0)
 
+#Variable para guardar el video
+salida = cv2.VideoWriter('videoSalida.avi',cv2.VideoWriter_fourcc(*'XVID'),30.0,(640,480))
+
 #Medidas de la Region de Interes
 x_roi = 100
 y_roi = 100	
@@ -54,8 +57,8 @@ while True:
 	#Se suaviza la imagen
 	th = cv2.medianBlur(th,9)
 
-	#Se muestra la imagen umbralizada
-	cv2.imshow('Vision Umbral',th)
+	#Se muestra la imagen ubralizada
+	cv2.imshow('th',th)
 	
 	#Detectamos los bordes
 	imgCanny = cv2.Canny(th,100,100)
@@ -64,8 +67,8 @@ while True:
 	imgDil = cv2.dilate(imgCanny, None, iterations=10)
 	
 	#Se muestran las imagenes
-	cv2.imshow('canny',imgCanny)
-	cv2.imshow('dilate',imgDil)
+	#cv2.imshow('canny',imgCanny)
+	#cv2.imshow('dilate',imgDil)
 
 	#Encontramos los contornos en la imagen
 	contornos,_ = cv2.findContours(imgDil, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -92,7 +95,10 @@ while True:
 				cv2.putText(frame,"Colision", (300,440), 1, 1.3, (0,0,255), thickness=2)
 	
 	#Mostramos el video
-	cv2.imshow('Vision normal', frame)
+	cv2.imshow('Frame', frame)
+
+	#Guardamos el video
+	salida.write(frame)
 
 	#Cerramos el programa con 'esc'	
 	k = cv2.waitKey(20)
@@ -100,4 +106,5 @@ while True:
 		break
 
 cap.release()
+salida.release()
 cv2.destroyAllWindows()
