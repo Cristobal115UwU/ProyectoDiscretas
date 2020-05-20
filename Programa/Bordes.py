@@ -55,7 +55,7 @@ while True:
 	th = cv2.medianBlur(th,9)
 
 	#Se muestra la imagen ubralizada
-	cv2.imshow('th',th)
+	cv2.imshow('Vision Umbral',th)
 	
 	#Detectamos los bordes
 	imgCanny = cv2.Canny(th,100,100)
@@ -92,7 +92,7 @@ while True:
 				cv2.putText(frame,"Colision", (300,440), 1, 1.3, (0,0,255), thickness=2)
 	
 	#Mostramos el video
-	cv2.imshow('Frame', frame)
+	cv2.imshow('Vision normal', frame)
 
 	#Cerramos el programa con 'esc'	
 	k = cv2.waitKey(20)

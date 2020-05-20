@@ -1,16 +1,16 @@
 \documentclass[]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
-\geometry{top= 0.5cm, bottom=2cm, left=1.5cm, right=1.5cm}
+\geometry{top= 2.5cm, bottom=2.5cm, left=2 cm, right=2 cm}
 \usepackage{graphicx}
-\title{Proyecto Estructuras Discretas}
+\title{Proyecto Estructuras Discretas: Sistema de deteccion de obstaculos basado en una camara web}
 \author{Bruno Solis Diego Roman\\García Gutiérrez Edgar Cristóbal\\López Gonzalez Kevin\\Moreno Peralta Angel Eduardo }
 \date{20 de Mayo 2020}
 
 \begin{document}
 \maketitle
 \section{Resumen}
-
+\large
 La geometría computacional es una rama de la ciencias de la computación dedicada al estudio de los algoritmos que pueden ser expresados en términos de la geometría.
 
 Gracias a esta rama de la computación han surgido muchas optimizaciones en diversas áreas de la vida cotidiana, tales como los mapas interactivos (como Google Maps), el poder visualizar el tráfico en vivo de alguna parte de nuestra localidad (como Waze), automóviles autónomos (Tesla), etcétera.\\
@@ -20,7 +20,7 @@ Un problema clásico de la geometría computacional es el llamado \textit{envolv
 Graficamente se representa así el problema:\\\begin{figure}[hbtp]
 \caption{•}
 \centering
-\includegraphics[width=7 cm, height= 2.5 cm]{../../Downloads/Convex.png}
+\includegraphics[width=7 cm, height= 2.5 cm]{../../../Downloads/Convex.png}
 \end{figure}
 
 
@@ -35,6 +35,6 @@ Con dicha lista de puntos podemos aplicar el algoritmo para construir el convex 
 La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto. Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sotifiscado para la deteccion de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
 
 \section{Diagrama de Flujo}
-\includegraphics[width=19 cm, height=22 cm]{../../Downloads/DiagramaFlujoD.png}
+\includegraphics[width=19 cm, height=22 cm]{../../../Downloads/DiagramaFlujoD.png}
 
 \end{document}
