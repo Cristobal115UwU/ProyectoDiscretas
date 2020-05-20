@@ -1,5 +1,15 @@
 import cv2
 from ConvexHull import GrahamScan
+from tkinter import *
+from tkinter import messagebox
+#Ventana emergente que indica las requerimientos para el funcionamiento del programa.
+window = Tk()
+window.eval('tk::PlaceWindow %s center' % window.winfo_toplevel())
+window.withdraw()
+messagebox.showinfo(message="Antes de iniciar el programa, asegurese de tener una camara web, estar en una habitacion oscura y tener una lampara de escritorio a la mano :)", title="Bienvenido")
+window.deiconify()
+window.destroy()
+window.quit()
 
 #Usar camara principal
 cap = cv2.VideoCapture(0)
@@ -59,7 +69,7 @@ while True:
 
 	#Encontramos los contornos en la imagen
 	contornos,_ = cv2.findContours(imgDil, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-	
+	print(type(contornos))
 	for c in contornos:
 		area = cv2.contourArea(c)
 		if area > areaMin:

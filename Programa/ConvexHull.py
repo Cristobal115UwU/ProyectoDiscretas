@@ -2,7 +2,8 @@ import numpy as np
 import math
 from operator import itemgetter
 
-#Fucnion que convierte un arreglo de [n][1][2] a una lista [n][2]
+
+#Funcion que convierte un arreglo de [n][1][2] a una lista [n][2]
 def arrayToList(array):
     arr = np.resize(array,(len(array),2))
     arr.tolist()
