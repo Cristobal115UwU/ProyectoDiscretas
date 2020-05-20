@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2020.3.19)  20 MAY 2020 14:40
 entering extended mode
 **./EstructurasD.tex
 (EstructurasD.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -107,24 +107,65 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(EstructurasD.aux
+(C:\Users\1ZW05LA_RS3\AppData\Roaming\MiKTeX\2.9\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\1ZW05LA_RS3\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
+Package: caption 2020/05/10 v3.4j Customizing captions (AR)
+
+(C:\Users\1ZW05LA_RS3\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
+Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count94
+\c@continuedfloat=\count95
+)
+\c@KVtest=\count96
+\sf@farskip=\skip43
+\sf@captopadj=\dimen121
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\c@subfigure=\count97
+\c@subfigure@save=\count98
+\c@lofdepth=\count99
+\c@subtable=\count100
+\c@subtable@save=\count101
+\c@lotdepth=\count102
+\sf@top=\skip46
+\sf@bottom=\skip47
+) (EstructurasD.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `f:VistaU' multiply defined.
+
+
+LaTeX Warning: Label `sub@f:VistaU' multiply defined.
+
 )
 \openout1 = `EstructurasD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -145,12 +186,12 @@ LaTeX Font Info:    ... okay on input line 11.
 * \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -164,16 +205,16 @@ LaTeX Font Info:    ... okay on input line 11.
 (C:\Users\1ZW05LA_RS3\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count94
-\scratchdimen=\dimen114
+\scratchcounter=\count103
+\scratchdimen=\dimen122
 \scratchbox=\box27
-\nofMPsegments=\count95
-\nofMParguments=\count96
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count97
-\MPscratchDim=\dimen115
-\MPnumerator=\count98
-\makeMPintoPDFobject=\count99
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen123
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks20
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -218,56 +259,81 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 12.
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 13.
 <../../../Downloads/Convex.png, id=1, 349.305pt x 121.45375pt>
 File: ../../../Downloads/Convex.png Graphic file (type png)
 <use ../../../Downloads/Convex.png>
-Package pdftex.def Info: ../../../Downloads/Convex.png  used on input line 22.
+Package pdftex.def Info: ../../../Downloads/Convex.png  used on input line 23.
 (pdftex.def)             Requested size: 199.16988pt x 71.13075pt.
  [1
 
 {C:/Users/1ZW05LA_RS3/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../..
 /../Downloads/Convex.png>]
-<../../../Downloads/Recon1.jpg, id=10, 82.6287pt x 47.09595pt>
-File: ../../../Downloads/Recon1.jpg Graphic file (type jpg)
-<use ../../../Downloads/Recon1.jpg>
-Package pdftex.def Info: ../../../Downloads/Recon1.jpg  used on input line 43.
-(pdftex.def)             Requested size: 426.79134pt x 243.2683pt.
-<../../../Downloads/DiagramaFlujoD.png, id=11, 572.28806pt x 597.58257pt>
+<../../../Pictures/Prueba1.png, id=11, 378.213pt x 284.262pt>
+File: ../../../Pictures/Prueba1.png Graphic file (type png)
+<use ../../../Pictures/Prueba1.png>
+Package pdftex.def Info: ../../../Pictures/Prueba1.png  used on input line 47.
+(pdftex.def)             Requested size: 227.62204pt x 171.079pt.
+<../../../Pictures/Prueba2.png, id=12, 261.3765pt x 168.02776pt>
+File: ../../../Pictures/Prueba2.png Graphic file (type png)
+<use ../../../Pictures/Prueba2.png>
+Package pdftex.def Info: ../../../Pictures/Prueba2.png  used on input line 50.
+(pdftex.def)             Requested size: 227.62204pt x 146.32654pt.
+<../../../Downloads/DiagramaFlujoD.png, id=13, 572.28806pt x 597.58257pt>
 File: ../../../Downloads/DiagramaFlujoD.png Graphic file (type png)
 <use ../../../Downloads/DiagramaFlujoD.png>
 Package pdftex.def Info: ../../../Downloads/DiagramaFlujoD.png  used on input l
-ine 50.
+ine 56.
 (pdftex.def)             Requested size: 483.69643pt x 625.97568pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--58
+
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <../../../Downloads/Recon1.jpg>] [3 <../../../Downloads/DiagramaFlujoD.png>]
-(EstructurasD.aux
+[2 <../../../Pictures/Prueba1.png> <../../../Pictures/Prueba2.png>] [3 <../../.
+./Downloads/DiagramaFlujoD.png>] (EstructurasD.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) ) 
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2895 strings out of 492895
- 41355 string characters out of 3133461
- 123758 words of memory out of 3000000
- 6788 multiletter control sequences out of 15000+200000
- 6103 words of font info for 22 fonts, out of 3000000 for 9000
+ 4210 strings out of 492895
+ 65404 string characters out of 3133461
+ 147109 words of memory out of 3000000
+ 8085 multiletter control sequences out of 15000+200000
+ 8225 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,31p,664b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on EstructurasD.pdf (3 pages, 189688 bytes).
+ 44i,10n,50p,664b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on EstructurasD.pdf (3 pages, 698038 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

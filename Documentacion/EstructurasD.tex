@@ -1,9 +1,10 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
 \geometry{top= 1.5 cm, bottom=2 cm, left=2 cm, right=2 cm}
 \usepackage{graphicx}
 \usepackage[spanish]{babel}
+\usepackage{subfig}
 \title{Proyecto Estructuras Discretas: Sistema de detección de obstáculos usando una cámara web}
 \author{Bruno Solís Diego Román\\García Gutiérrez Edgar Cristóbal\\López Gonzalez Kevin\\Moreno Peralta Angel Eduardo }
 \date{20 de Mayo 2020}
@@ -38,10 +39,15 @@ Con dicha lista de puntos podemos aplicar el algoritmo para construir el Convex 
 
 La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el Convex Hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto.
 
-Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sofisticado para la detección de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.\\
-\begin{figure}[h]
-\includegraphics[width=15 cm]{../../../Downloads/Recon1.jpg}
+Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sofisticado para la detección de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.\\\\\\
+\begin{figure}[h!]
 \centering
+\subfloat[Vista normal]{
+   \label{f:VistaU}
+	\includegraphics[width=8 cm]{../../../Pictures/Prueba1.png}}
+\subfloat[Vista umbral]{
+   \label{f:VistaU}
+	\includegraphics[width=8 cm]{../../../Pictures/Prueba2.png}}
 \caption{Funcionamiento del programa}
 \end{figure} 
 \begin{figure}[h!]
