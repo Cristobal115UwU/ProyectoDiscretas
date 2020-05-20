@@ -1,26 +1,27 @@
-\documentclass[]{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
-\geometry{top= 2.5cm, bottom=2.5cm, left=2 cm, right=2 cm}
+\geometry{top= 2 cm, bottom=2 cm, left=2 cm, right=2 cm}
 \usepackage{graphicx}
-\title{Proyecto Estructuras Discretas: Sistema de deteccion de obstaculos basado en una camara web}
-\author{Bruno Solis Diego Roman\\García Gutiérrez Edgar Cristóbal\\López Gonzalez Kevin\\Moreno Peralta Angel Eduardo }
+\usepackage[spanish]{babel}
+\title{Proyecto Estructuras Discretas: Sistema de detección de obstáculos usando una cámara web}
+\author{Bruno Solís Diego Román\\García Gutiérrez Edgar Cristóbal\\López Gonzalez Kevin\\Moreno Peralta Angel Eduardo }
 \date{20 de Mayo 2020}
 
 \begin{document}
 \maketitle
 \section{Resumen}
-\large
 La geometría computacional es una rama de la ciencias de la computación dedicada al estudio de los algoritmos que pueden ser expresados en términos de la geometría.
 
 Gracias a esta rama de la computación han surgido muchas optimizaciones en diversas áreas de la vida cotidiana, tales como los mapas interactivos (como Google Maps), el poder visualizar el tráfico en vivo de alguna parte de nuestra localidad (como Waze), automóviles autónomos (Tesla), etcétera.\\
 Debido al gran potencial que tiene esta rama de la ciencia se decidió buscar una optimización que nos ayude a solucionar un problema de la vida real usando conceptos de matemáticas discretas, y geometría euclidiana.
 
 Un problema clásico de la geometría computacional es el llamado \textit{envolvente convexo} (en inglés \textit{convex hull}), este problema plantea que dado un conjunto de puntos, se crea un polígono (por lo general irregular) el cual en su interior tendra almacenados a los puntos de dicho conjunto. Este es un problema clásico de la geometría computacional y existen diversos algoritmos que resuelven este problema tales como: Graham Scan, QuickHull, Fuerza Bruta etc.\\
-Graficamente se representa así el problema:\\\begin{figure}[hbtp]
-\caption{•}
+Graficamente se representa así el problema:\\
+\begin{figure}
 \centering
 \includegraphics[width=7 cm, height= 2.5 cm]{../../../Downloads/Convex.png}
+\caption{Representación grafica de convex hull}
 \end{figure}
 
 
@@ -32,9 +33,10 @@ Para el correcto funcionamiento del programa necesitaremos tener una cámara web
 
 Con dicha lista de puntos podemos aplicar el algoritmo para construir el convex hull, dicho algoritmo se trata de Graham Scan debido a su facilidad de aplicar. Con el convex hull hecho guardamos los puntos que formen parte de las aristas de nuestro convex hull. Para saber si el objeto va a entrar en colisión uno de los puntos que estén contenidos en las aristas del convex hull tienen que ser mayores o iguales a los puntos que están contenidas en las aristas de un rectángulo, este rectángulo y la construcción del convex hull se pueden apreciar en la ventana que muestra lo que esta capturando la cámara web (vista normal).
 
-La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto. Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sotifiscado para la deteccion de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
-
+La lógica de este programa se basa en la funcionalidad del ojo humano. El fundamento de esto es que cuando vemos, de manera física, muy cerca un objeto , esto implica que estamos físicamente muy cerca de ese objeto. Esto en nuestro programa se traduce en que cuando el convex hull salga de nuestro campo de visión (rectángulo), implicaría que este objeto esta muy cerca y por lo tanto el riesgo de colisión es muy alto. Debido al hardware disponible por los autores, este programa tiene ciertos limites tales como el requerimiento de un buen fondo y hardware sofisticado para la detección de movimiento, sin embargo con lo hecho en este proyecto logramos lo que queremos demostrar.
+\begin{figure}[h!]
 \section{Diagrama de Flujo}
+\centering
 \includegraphics[width=19 cm, height=22 cm]{../../../Downloads/DiagramaFlujoD.png}
-
+\end{figure}
 \end{document}

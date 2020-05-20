@@ -54,8 +54,8 @@ while True:
 	#Se suaviza la imagen
 	th = cv2.medianBlur(th,9)
 
-	#Se muestra la imagen ubralizada
-	cv2.imshow('Vision Umbral',th)
+	#Se muestra la imagen umbralizada
+	#cv2.imshow('Vision Umbral',th)
 	
 	#Detectamos los bordes
 	imgCanny = cv2.Canny(th,100,100)
@@ -64,8 +64,8 @@ while True:
 	imgDil = cv2.dilate(imgCanny, None, iterations=10)
 	
 	#Se muestran las imagenes
-	#cv2.imshow('canny',imgCanny)
-	#cv2.imshow('dilate',imgDil)
+	cv2.imshow('canny',imgCanny)
+	cv2.imshow('dilate',imgDil)
 
 	#Encontramos los contornos en la imagen
 	contornos,_ = cv2.findContours(imgDil, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
